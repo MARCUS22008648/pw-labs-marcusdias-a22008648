@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <style>
+            table, th, tr{
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ana Maria">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Rio de Janeiro">
+        <link rel="stylesheet" href="./style.css">
+        <title>Rio de Janeiro</title>
+    </head>
+    <body>
+        <header>
+            <h1>Rio de Janeiro</h1>
+            <img src="images/cidade.jpg   "><br>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html"> Localização</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="html5-css.html">HTML e CSS</a>
+            <a href="../index.html">Laboratórios PW</a>
+        </nav>
+        <main>
+            <section>
+                <h3>Quizz</h3>
+                <p>Nesta página, irá realizar um quizz sobre a cidade. Vamos ver se conhece bem a cidade.</p>
+            </section>
+            <section>
+                <form method="POST" action="mailto: marcus.a.s.d14@gmail.com" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Rio de janeiro Quizz</legend>
+                        <fieldset>
+                            <legend>Info</legend>
+                            <p>Nome: <input type="text" name="nome" autofocus required></p>
+
+                            <p>Apelido: <input type="text" name="apelido" required></p>
+
+                            <p>Email: <input type="email" name="email" required></p>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Perguntas</legend>
+                            <p>
+                                <label>Descreva a cidade por palavras suas: </label>
+                                <input type="text" autocomplete="off" placeholder="Escreva aqui o seu texto"> 
+
+                                <p>Em que país se situa a cidade do Rio de janeiro?</p>
+                                <input type="radio" class="radio" id="argentina" value="argentina" name="pais">
+                                <label for="argentina">Argentina</label>
+
+                                <input type="radio" class="radio" id="brasil" value="brasil" name="pais">
+                                <label for="brasil">Brasil</label>
+
+                                <input type="radio" class="radio" id="colombia" value="colombia" name="pais">
+                                <label for="colombia">Colômbia</label>
+
+                                <input type="radio" class="radio" id="chile" value="chile" name="pais">
+                                <label for="chile">Chile</label>
+
+                                <p>Escolha algumas palavras relacionadas à cidade mencionadas na página principal:</p>
+                                <input type="checkbox" class="checkbox" id="praia" name="praia" value="praia">
+                                <label for="praia">Praia</label>
+
+                                <input type="checkbox" class="checkbox" id="pascoa" name="pascoa" value="pascoa">
+                                <label for="pascoa">Páscoa</label>
+
+                                <input type="checkbox" class="checkbox" id="futebol" name="futebol" value="futebol">
+                                <label for="futebol">Futebol</label>
+
+                                <input type="checkbox" class="checkbox" id="carnaval" name="carnaval" value="carnaval">
+                                <label for="carnaval">Carnaval</label><br>
+
+                                <input type="checkbox" class="checkbox" id="estatua" name="estatua" value="estatua">
+                                <label for="estatua">Estátua</label>
+
+                                <input type="checkbox" class="checkbox" id="amazonia" name="amazonia" value="amazonia">
+                                <label for="amazonia">Amazonia</label>
+
+
+                                <label for="color">Indique uma cor que represente a cidade:</label>
+                                <input type="color" id="color" name="color" value="color">
+
+
+                                <label for="number">Indique a altura da estátua do Cristo Redentor:</label>
+                                <input type="number" autocomplete="off" size="2" maxlength="2" id="number" name="number" value="number">
+
+                                <label for="range">Qual a população da cidade? (0 a 8 000 000)</label>
+                                <input type="range" id="range" name="range" value="range" min="0", max="8000000">
+
+                                <label for="date">Data da submissão do Quizz</label>
+                                <input type="date" id="date" name="date" value="date">
+
+                                <label for="cidade">Indique outra cidade brasileira: </label>
+                                <select name="cidade" id="cidade" multiple>
+                                  <option value="saoPaulo">são Paulo</option>
+                                  <option value="lisboa">Lisboa</option>
+                                  <option value="porto">Porto</option>
+                                  <option value="barcelona">Barcelona</option>
+                                </select>
+
+                                <label for="browsers">Browser que está a usar: </label>
+                                <input list="browsers" name="browser">
+                                <datalist id="browsers">
+                                    <option value="Internet Explorer">
+                                    <option value="Firefox">
+                                    <option value="Chrome">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                                </datalist>
+
+                                
+                                <label for="codigoPostal">Código Postal:</label>
+                                <input type="text" id="codigoPostal" name="codigoPostal" pattern="^(?(^0000(|-000))|(\d{4}(|-\d{3})))$" 
+                                title="Código Postal">
+
+                                <label for="mensagem">Dê-nos sua opinião: </label><br>
+                                <textarea name="mensagem" rows="10" cols="30">Pode-se inserir algum texto na caixa.</textarea>
+
+                                <input type="image" src="./images/submitBtn.ico" alt="Submit" width="48" height="48">
+                            </p>
+                        </fieldset>
+
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
