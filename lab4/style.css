@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;    
+    font-family: 'Roboto', sans-serif;
+}
+.capitais{
+    display: flex;
+    background-color:lightcyan;
+    flex-flow: row wrap;
+    align-items: space-around;
+    padding: 50px;
+}
+
+.capitais > div{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 50x 15px #888888;
+    margin: 10px;
+}
+.capitais img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capitais img:hover{
+    opacity: 0.4;
+}
+.capitais div div:last-child:hover{
+    opacity: 0.4;
+}
+
+.menu{
+    display:flex;
+}
+
+.menu a{
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.menu a:last-child{
+    margin-left:auto;
+}
+.menu a:hover{
+    background-color:darkgray;
+    font-weight: bold;
+}
+
+.cabecalho{
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80px;
+    display:
+}
